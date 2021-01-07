@@ -165,11 +165,11 @@ class PluginRTCAudioController {
 			PluginRTCAudioController.initAudioDevices()
 		}
 
-		NotificationCenter.default.addObserver(
+		/* NotificationCenter.default.addObserver(
 			self,
 			selector: #selector(self.audioRouteChangeListener(_:)),
 			name: AVAudioSession.routeChangeNotification,
-			object: nil)
+			object: nil) */
 	}
 
 	@objc dynamic fileprivate func audioRouteChangeListener(_ notification:Notification) {
